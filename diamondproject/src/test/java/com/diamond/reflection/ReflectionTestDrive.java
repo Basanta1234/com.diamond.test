@@ -4,7 +4,17 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 
 public class ReflectionTestDrive {
-
+/*
+ * 
+ * 
+ * Reflection api is very
+ * helpful for retrieving 
+ * information about the
+ * specfic class, mehtods
+ * , constructors, parametert
+ * and other info.
+ * 
+ */
 	public static void main(String[] args) {
 		ReflectionTest t = new ReflectionTest();
 		Class<?> clazz = t.getClass();
