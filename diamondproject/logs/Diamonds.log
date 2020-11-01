@@ -1,0 +1,4 @@
+[ERROR] 2020-10-31 22:23:53.277 [main] LoggerSetup - This is to check error message
+[FATAL] 2020-10-31 22:23:53.280 [main] LoggerSetup - This is to check fatal message 
+[DEBUG] 2020-10-31 22:23:53.281 [main] LoggerSetup - This is to check debug message
+[INFO ] 2020-10-31 22:23:53.281 [main] LoggerSetup - This is to check log info message
