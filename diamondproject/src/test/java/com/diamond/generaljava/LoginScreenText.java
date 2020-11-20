@@ -4,7 +4,6 @@ import com.diamond.exceptions.TextDoesNotBelongLoginScreenException;
 
 public class LoginScreenText {
 
-	
 	public static void main(String[] args) throws TextDoesNotBelongLoginScreenException {
 		LoginScreenText lg = new LoginScreenText();
 		String screenText = "B";
@@ -14,8 +13,8 @@ public class LoginScreenText {
 
 	public boolean getLoginScreen() throws TextDoesNotBelongLoginScreenException {
 		boolean flag = false;
-		String actualText="";
-		String expectedText="";
+		String actualText = "";
+		String expectedText = "";
 		if (isAtHomePage()) {
 			System.out.println("Hit shift plus 12");
 			System.out.println("Enter text logoff");
@@ -27,17 +26,17 @@ public class LoginScreenText {
 			System.out.println("Enter text logoff");
 			System.out.println("Hit Enter");
 			flag = isAtLoginScreen();
-			
+
 			return true;
 		} else if (isAtLoginScreen()) {
 			flag = isAtLoginScreen();
 			return true;
 		}
-		throw new TextDoesNotBelongLoginScreenException(actualText,expectedText );
+		throw new TextDoesNotBelongLoginScreenException(actualText, expectedText);
 	}
 
 	private boolean isAtMainMenuPage() {
-		String screenText="";
+		String screenText = "";
 		if (screenText.equals("C")) {
 			return true;
 		}
@@ -45,7 +44,7 @@ public class LoginScreenText {
 	}
 
 	private boolean isAtHomePage() {
-		String screenText="";
+		String screenText = "";
 		if (screenText.equals("B")) {
 			return true;
 		}
@@ -53,10 +52,10 @@ public class LoginScreenText {
 	}
 
 	public boolean isAtLoginScreen() {
-		String screenText="";	
+		String screenText = "";
 		if (screenText.equals("A")) {
-				return true;
-			}
-			return false;
+			return true;
 		}
+		return false;
+	}
 }

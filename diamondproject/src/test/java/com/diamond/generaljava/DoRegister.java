@@ -16,7 +16,7 @@ public class DoRegister {
 
 	public static void addItem(int p, int l) {
 
-		String fieldName = "P" + Integer.toString(p) + "L" + Integer.toString(setLineIndex(p,l, 3)) + " -REV";
+		String fieldName = "P" + Integer.toString(p) + "L" + Integer.toString(setLineIndex(p, l, 3)) + " -REV";
 		int row = 2;
 		int column = 5;
 		System.out.println(fieldName);
@@ -25,10 +25,10 @@ public class DoRegister {
 
 	public static int setLineIndex(int p, int l, int linePerPage) {
 		int lineNumber = 0;
-		if(p==1) {
-			lineNumber=l;
-		}else {
-			lineNumber=(p*linePerPage)+l-linePerPage;
+		if (p == 1) {
+			lineNumber = l;
+		} else {
+			lineNumber = (p * linePerPage) + l - linePerPage;
 		}
 		return lineNumber;
 
