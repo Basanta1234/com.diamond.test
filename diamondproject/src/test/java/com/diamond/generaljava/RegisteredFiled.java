@@ -36,15 +36,12 @@ public class RegisteredFiled {
  * setting column Index
  * 
  */
-	private int setColumnIndexForMultiLinePage(int i, int firstIndexValue,int diff) {
-	
-		int colIndexValue=0;
-		if(i==1) {
-			colIndexValue=firstIndexValue;
-		}else  {
-			colIndexValue=((i-1)*diff)+firstIndexValue;
-		}
-		return colIndexValue;
+	public static int setColumnIndexForMultiLinePage(int i, int firstIndexValue,int diff) {
+		return firstIndexValue+(i-1)*diff;
+		
 	}
-
+	public static int setLine(int p, int l,int linePerPage) {
+		return l+(p-1)*linePerPage;
+		
+	}
 }
